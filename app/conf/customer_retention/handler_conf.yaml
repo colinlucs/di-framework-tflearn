@@ -1,0 +1,12 @@
+#cconfigurations for result handler
+recommendation_map:
+  0: 'Service Discount or Account Credit'
+  1: 'Plan Upgrade'
+  2: 'Service or Plan Downgrade'
+  3: 'Additional Add-on Services'
+  4: 'Additional Service Usage'
+  5: 'Service Quality Upgrade'
+  6: 'Free New Install or Move'
+  7: 'Extended Promotion or Price Lock Down'
+  8: 'Free Devices or Device Upgrade'
+  9: 'Free Accessories'

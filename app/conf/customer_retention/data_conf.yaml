@@ -1,0 +1,58 @@
+#data pre-processing configurations for customer retention
+data_file: data/customer_retention.csv
+target_column: 0
+n_classes: 10
+columns_to_ignore:
+  - 0
+conversion_map:
+  0:
+    - 'Female'
+    - 'Male'
+  1:
+    - 'K-12 student'
+    - 'Unemployed'
+    - 'College/Grad student'
+    - 'Food Preparation and Serving Related'
+    - 'Personal Care and Service'
+    - 'Building and Grounds Cleaning and Maintenance'
+    - 'Farming, Fishing, and Forestry'
+    - 'Healthcare Support Occupations'
+    - 'Self-employed'
+    - 'Transportation and Material Moving'
+    - 'Office and Administrative Support'
+    - 'Production Occupations'
+    - 'Sales and Related'
+    - 'Retired'
+    - 'Protective Service'
+    - 'Installation, Maintenance, and Repair'
+    - 'Community and Social Service'
+    - 'Construction and Extraction'
+    - 'Other - Not specified'
+    - 'Education, Training, and Library'
+    - 'Arts, Design, Entertainment, Sports, and Media'
+    - 'Life, Physical, and Social Science'
+    - 'Business and Financial Operations'
+    - 'Healthcare Practitioners and Technical'
+    - 'Architecture and Engineering'
+    - 'Computer and Mathematical'
+    - 'Legal Occupations'
+    - 'Executive/Management'
+  3:
+    - 'No'
+    - 'Yes'
+  4:
+    - 'No'
+    - 'Yes'
+  6:
+    - 'No'
+    - 'Yes'
+  7:
+    - 'No'
+    - 'Yes'
+  8:
+    - 'Bundle'
+    - 'Wireless'
+    - 'Internet'
+    - 'TV'
+    - 'Home Phone'
+

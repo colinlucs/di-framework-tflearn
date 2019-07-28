@@ -1,0 +1,29 @@
+#Neural network configurations
+input_layer:
+  shape:
+    -
+    - 9
+hidden_layers:
+    - type: 'fully_connected'
+      neuron: 32
+      activation: 'relu'
+      dropout:
+    - type: 'fully_connected'
+      neuron: 32
+      activation: 'relu'
+      dropout:
+    - type: 'fully_connected'
+      neuron: 32
+      activation: 'relu'
+      dropout:
+output_layer:
+    type: 'fully_connected'
+    neuron: 10
+    activation: 'softmax'
+regression:
+  optimizer: 'adam'
+  loss: 'categorical_crossentropy'
+fit:
+  n_epoch: 10
+  batch_size: 16
+  show_metric: True

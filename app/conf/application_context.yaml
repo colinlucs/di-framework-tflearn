@@ -1,0 +1,32 @@
+#Configuration for classifiers
+classifiers:
+  customer_churn: #customer churn classifier
+    module: framework.data_classifier
+    class_name: CsvDataClassifier
+    data_loader:
+      module: framework.csv_loader
+      class_name: CsvLoader
+      data_config: conf/customer_churn/data_conf.yaml
+    neural_network:
+      module: framework.dnn_model
+      class_name: DnnModel
+      dnn_config: conf/customer_churn/dnn_conf.yaml
+    result_handler:
+      module: app.customer_churn_handler
+      class_name: CustomerChurnHandler
+      handler_config:
+  customer_retention: #customer retention recommender
+    module: framework.data_classifier
+    class_name: CsvDataClassifier
+    data_loader:
+      module: framework.csv_loader
+      class_name: CsvLoader
+      data_config: conf/customer_retention/data_conf.yaml
+    neural_network:
+      module: framework.dnn_model
+      class_name: DnnModel
+      dnn_config: conf/customer_retention/dnn_conf.yaml
+    result_handler:
+      module: app.customer_retention_handler
+      class_name: CustomerRetentionHandler
+      handler_config: conf/customer_retention/handler_conf.yaml
