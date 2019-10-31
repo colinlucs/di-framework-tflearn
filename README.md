@@ -8,11 +8,11 @@ This is a sample project"Smart Customer Retention" of my article: [Use Configura
 This sample consists of the following parts:
 * __framework__
 
-	A dependency injection frameowrk with pre-built python modules to build deep learning models on TFLearn and TensorFlow.
+    A dependency injection framework consists of pre-built python modules to build deep learning models on TFLearn and TensorFlow.
 	
 * __app__
 
-    A sample application: "Smart Customer Retntion" having two classifiers of predicting customer churn and providing customer retention recommendations.
+    A sample application, Smart Customer Retention, have two classifiers of predicting customer churn and providing customer retention recommendations.
     
 ---
 
