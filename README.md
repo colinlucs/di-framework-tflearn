@@ -1,6 +1,6 @@
 # A Configuration-based Dependency Injection Framework for Building Deep Learning Models on TFLearn
 
-This is a sample project of "Smart Customer Retention" building deep learning models using a configuration-based dependency injection  on TFLearn.
+This is a sample project"Smart Customer Retention" of my article: [Use Configuration-Based Dependency Injection on TFLearn to Improve Iterative Deep Learning Development Process](https://dzone.com/articles/use-configuration-based-dependency-injection-on-tf). It demonstrates how to build deep learning models using configuration-based dependency injection techniques in python programming on the TFLearn APIs.
 
 ---
 
@@ -263,7 +263,7 @@ $ python3 application.py build_model customer_churn
 
 ```
 
-Or just add the following python code in your own file:
+Or add the following python code in your source file:
 
 ```python
 application = ApplicationContext.get_instance('conf/application_context.yaml')
@@ -301,7 +301,7 @@ $ python3 application.py build_model customer_retention
 
 ```
 
-Or just add the following python code in your own file:
+Or add the following python code in your source file:
 
 ```python
 application = ApplicationContext.get_instance('conf/application_context.yaml')
@@ -345,7 +345,7 @@ $ python3 application.py predict customer_churn
 
 ```
 
-Or just add the following python code in your own file for the sample customers:
+Or add the following python code in your source file to run the predict for the sample customers:
 
 ```python
 tony = ['4d316bef-9856-4ea0-aed0-a53e55fed3db', 'Male', 'K-12 student', 20, 'No', 'Yes', 12, 'No', 'No',
@@ -374,7 +374,7 @@ $ python3 application.py predict customer_retention
 
 ```
 
-Or just add the following python code in your own file for the sample customers:
+Or add the following python code in your source file to run the predict for the sample customers:
 
 ```python
 tony = ['4d316bef-9856-4ea0-aed0-a53e55fed3db', 'Male', 'K-12 student', 20, 'No', 'Yes', 12, 'No', 'No',
